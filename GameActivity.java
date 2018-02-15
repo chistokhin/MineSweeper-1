@@ -30,13 +30,6 @@ public class GameActivity extends AppCompatActivity {
         // prevent from rotating the screen
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
-        // Load an ad into the AdMob banner view.
-        adView = findViewById(R.id.bannerAdView);
-        adRequest = new AdRequest.Builder()
-                .addTestDevice(adRequest.DEVICE_ID_EMULATOR)
-                .build();
-        adView.loadAd(adRequest);
-
         mGameStatusTextView = findViewById(R.id.gameStatusMessage);
         mMineCount = findViewById(R.id.mineCount);
         mPlayAgainBtn = findViewById(R.id.playAgain_btn);
