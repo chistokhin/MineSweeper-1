@@ -9,9 +9,6 @@ import android.widget.Button;
 import android.widget.Chronometer;
 import android.widget.TextView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
-
 public class GameActivity extends AppCompatActivity {
 
     static TextView mGameStatusTextView;
@@ -19,9 +16,6 @@ public class GameActivity extends AppCompatActivity {
     static Button mPlayAgainBtn;
 
     static Chronometer mTimerChrono;
-
-    AdView adView;
-    AdRequest adRequest;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
